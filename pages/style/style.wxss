@@ -1,0 +1,31 @@
+/* pages/style/style.wxss */
+/* 公共样式 */
+.titleTop{
+  text-align: center;
+}
+/* tab选项卡样式 */
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height:80rpx;
+  line-height: 80rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 50%; 
+  color:#434343;
+}
+.active{
+  color:#25b6ed;
+  border-bottom: 2rpx solid #25b6ed;
+}
+/* 点击上下效果 */
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}

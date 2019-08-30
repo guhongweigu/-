@@ -1,0 +1,40 @@
+<!--pages/style/style.wxml-->
+<view>
+  <view style="background:#aaa;margin-bottom:20px;">
+    <view class="titleTop">tab选项卡效果</view>
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">选项1</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">选项2</view>
+    </view>
+    <swiper current="{{currentTab}}" bindchange="swiperTab">
+          <swiper-item >
+          <view>选项1</view>
+          </swiper-item>
+          <swiper-item>
+              <view>选项2</view>
+          </swiper-item>
+      </swiper>
+  </view>
+  <view style="background:#bbb;margin-bottom:20px;">
+    <view class="titleTop">公司介绍上下切换</view>
+    <view class="buttonChange">
+      <button  class="hide{{showView?'show':''}}" bindtap="onChangeShowState">隐藏</button>
+      <button class="hide{{showView?'':'show'}}" bindtap="onChangeShowState">显示</button>
+    </view>
+    <view class="hide{{showView?'show':''}} hideStyle">
+      <text class="text">文字部分</text>
+    </view>
+  </view>
+  <view style="background:#ccc;margin-bottom:20px;">
+    <view class="titleTop">页面跳转</view>
+    <view bindtap="onDetail" id="{{jobFair._id}}">跳转</view>
+  </view>
+  <view style="background:#ddd;margin-bottom:20px;">
+    <view class="titleTop">列表循环</view>
+    <view wx:key="unique" wx:for="{{list}}" wx:for-item="item">
+        <view bindtap="bindtap" id="{{list._id}}">
+          <view>列表标题：<text>{{item.title}}</text></view>
+        </view>
+    </view>
+  </view>
+</view>
