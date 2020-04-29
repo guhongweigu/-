@@ -1,0 +1,99 @@
+// pages/myFinance/index.js
+const app = getApp()
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    nvabarData: {
+      showCapsule: 0, //是否显示左上角图标，消息中心   1表示显示    0表示不显示
+      showBack: 1, //返回
+      title: '我的融资', //导航栏 中间的标题
+      // 此页面 页面内容距最顶部的距离
+      height: app.globalData.height * 2 + 20,
+    },
+    list: [{
+      "bankName": "中国建设银行",
+      "yuan": "200",
+      "status": "提交",
+    }, {
+      "bankName": "中国建设银行",
+      "yuan": "200",
+      "status": "提交",
+    }, {
+      "bankName": "中国建设银行",
+      "yuan": "200",
+      "status": "提交",
+    }, ]
+  },
+  // 页面跳转
+  // 判断id
+  bindtap: function (e) {
+    console.log(e.currentTarget.id)
+    wx.navigateTo({
+      url: '/pages/myFinanceDetail/index?id=' + e.currentTarget.id // 希望跳转过去的页面    
+    })
+  },
+  // 无id，模拟数据跳转
+  bindtap: function () {
+    wx.navigateTo({
+      url: '/pages/myFinanceDetail/index'
+    })
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

@@ -1,0 +1,81 @@
+	<wxs module="banner" src="../home/banner.wxs"></wxs>
+	<nav-bar navbar-data='{{nvabarData}}' id="navbar"></nav-bar>
+	<view class="home">
+		<view class="top">
+			<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+				<block wx:key="unique" wx:for="{{background}}" wx:for-item="item">
+					<swiper-item>
+						<image src="{{banner.bannerimg(item.url)}}"></image>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		<view class="main">
+			<view class="mainOne">
+				<view class="left">
+					<image src="/pages/images/index-01.png"></image>
+					<view>已成功对接<span>{{successNum}}</span>家企业</view>
+				</view>
+			</view>
+			<view class="mainTwo">
+				<span class="title">热门产品</span>
+				<scroll-view class="container-zhaozhi" scroll-x="true">
+					<view class="chaozhi">
+						<block wx:for="{{productList}}" wx:key="item">
+							<view class="chaozhilist" catchtap="toshow" data-claimid="{{item._id}}">
+								<image style="width:330rpx;height:108rpx" src="{{item.pic}}"></image>
+								<view>{{item.title}}</view>
+							</view>
+						</block>
+					</view>
+				</scroll-view>
+			</view>
+			<view class="mainThree">
+				<view class="mainThreeTop">
+					<span>政策解读</span>
+					<a bindtap="policyListTap">MORE></a>
+				</view>
+				<view class="mainThreeList">
+					<view class="list" wx:key="unique" wx:for="{{policyList}}" wx:for-item="item">
+						<view bindtap="policyListDetailTap" id="{{list._id}}" data-pid="{{item.id}}">
+							<image src="{{item.image}}"></image>
+							<view class="info">
+								<p>{{item.title}}</p>
+								<p>
+									<span>主题词：{{item.subject_headings}}</span>
+									<span>政策等级：{{item.subject_classification}}</span>
+								</p>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="down">
+			<van-tabbar active="{{ active }}" bind:change="onChange" class="tabber">
+				<van-tabbar-item>
+					<image slot="icon" src="{{ icon.normal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					<image slot="icon-active" src="{{ icon.active }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					首页
+				</van-tabbar-item>
+				<van-tabbar-item>
+					<image slot="icon" src="{{ icon.bankNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					<image slot="icon-active" src="{{ icon.bankActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					我要融资
+				</van-tabbar-item>
+				<van-tabbar-item>
+					<image slot="icon" src="{{ icon.marketNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					<image slot="icon-active" src="{{ icon.marketActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					金融数字超市
+				</van-tabbar-item>
+				<van-tabbar-item>
+					<image slot="icon" src="{{ icon.policyNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					<image slot="icon-active" src="{{ icon.policyActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					政策解读</van-tabbar-item>
+				<van-tabbar-item>
+					<image slot="icon" src="{{ icon.myNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					<image slot="icon-active" src="{{ icon.myActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+					我的</van-tabbar-item>
+			</van-tabbar>
+		</view>
+	</view>

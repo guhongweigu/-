@@ -1,0 +1,282 @@
+.home-page {
+  height: 160rpx;
+  width: 100%;
+  border: 1rpx solid red;
+  font-size: 60rpx;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 135rpx;
+}
+
+.home .top {
+  width: 100%;
+  height: 350rpx;
+}
+
+.home .top image {
+  width: 100%;
+  height: 350rpx;
+}
+
+.home .top swiper {
+  height: 350rpx;
+}
+
+.home .main {
+  float: left;
+  width: 100%;
+}
+
+.main .mainOne {
+  float: left;
+  width: 100%;
+  height: 210rpx;
+  margin: 40rpx 0 46rpx 0;
+}
+
+.main .mainOne .left {
+  float: left;
+  width: 92%;
+  height: 210rpx;
+  margin: 0 10rpx 0 30rpx;
+  background: linear-gradient(49deg, rgba(250, 110, 36, 1), rgba(255, 48, 53, 1));
+  border-radius: 30rpx;
+  position: relative;
+}
+
+.main .mainOne .left image {
+  position: absolute;
+  width: 92%;
+  height: 210rpx;
+}
+
+.main .mainOne .left view {
+  position: absolute;
+  bottom: 66rpx;
+  color: #fff;
+  left: 80rpx;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main .mainOne .left view span {
+  color: #FFFC00;
+  padding: 0 10rpx;
+}
+
+
+.main .mainTwo {
+  float: left;
+  width: 100%;
+  height: 170rpx;
+  margin: 0 30rpx 50rpx 30rpx;
+}
+
+.main .mainTwo .title {
+  float: left;
+  width: 100%;
+  font-size: 34rpx;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 0 30rpx 0;
+}
+
+.main .mainTwo .list {
+  float: left;
+  width: 335rpx;
+  height: 108rpx;
+  margin: 0 20rpx 0 0;
+  background: rgba(151, 93, 255, 1);
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.main .mainTwo .list:last-child {
+  background: rgba(30, 219, 233, 1);
+  margin: 0;
+}
+
+.main .mainTwo .list image {
+  float: left;
+  width: 100%;
+  height: 108rpx;
+}
+
+.main .mainTwo .list text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  color: #fff;
+  background: #cccccc5f;
+  height: 108rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 108rpx;
+  font-weight: bold;
+
+}
+
+.mainThree {
+  float: left;
+  width: 100%;
+  margin: 0 30rpx;
+}
+
+.mainThree .mainThreeTop {
+  float: left;
+  width: 100%;
+  margin: 0 0 30rpx 0;
+  height: 35rpx;
+  line-height: 35rpx;
+
+}
+
+.mainThree .mainThreeTop span {
+  float: left;
+  width: 80%;
+  font-size: 34rpx;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: rgba(40, 40, 40, 1);
+}
+
+.mainThree .mainThreeTop a {
+  float: right;
+  width: 20%;
+  font-size: 24rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+}
+
+.mainThreeList {
+  float: left;
+  width: 100%;
+}
+
+.mainThreeList .list {
+  float: left;
+  width: 100%;
+  height: 150rpx;
+  margin: 0 0 20rpx 0;
+}
+
+.mainThreeList image {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 20rpx 0 0;
+}
+
+.mainThreeList .info {
+  float: left;
+  width: 520rpx;
+  height: 150rpx;
+}
+
+.mainThreeList .info p:first-child {
+  float: left;
+  width: 100%;
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.mainThreeList .info p:last-child {
+  float: left;
+  width: 100%;
+  margin: 20rpx 0 0 0;
+}
+
+.mainThreeList .info p:last-child span {
+  float: left;
+  width: 228rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: left;
+  margin: 0 20rpx 0 0;
+  background: rgba(242, 245, 250, 1);
+  border-radius: 10px;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+  padding: 0 0 0 20rpx;
+
+}
+
+.mainThreeList .info p:last-child span:last-child {
+  margin: 0;
+}
+
+.home .down {
+  float: left;
+  width: 100%;
+}
+
+.home .down .tabber {
+  float: left;
+  width: 100%;
+  margin: 100rpx 0 0 0;
+}
+
+/* 新增效果 */
+.container-zhaozhi {
+  padding: 0 10rpx;
+  border-radius: 20rpx;
+  white-space: nowrap;
+  /*不放这个不能横排*/
+}
+
+.container-zhaozhi .chaozhilist {
+  width: 330rpx;
+  height: 108rpx;
+  display: inline-block;
+  margin: 0 30rpx 0 0;
+  position: relative;
+  border-radius: 20rpx;
+  /*不放这个不能横排*/
+}
+
+.container-zhaozhi .chaozhilist:last-child {
+  margin: 0 105rpx 0 0;
+}
+
+.container-zhaozhi .chaozhilist image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 108rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+
+.container-zhaozhi .chaozhilist view {
+  position: absolute;
+  width: 82%;
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  background: #cccccc5f;
+  color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 30rpx;
+}

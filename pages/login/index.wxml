@@ -1,0 +1,30 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<text class="title">
+      <text>你好， </text>
+		<text>欢迎来到小微企业金融</text>
+		</text>
+		<view class="form">
+			<form bindsubmit="formSubmit" bindreset="formReset">
+				<view class='input-content'>
+					<view class='input-col'>
+						<input type='number' name="phone" placeholder='请输入您本人的手机号码' maxlength="11" placeholder-style="color:#888888;"></input>
+					</view>
+					<view class='input-col' style='border-bottom:none'>
+						<input type='text' password name="password" placeholder='请输入密码' placeholder-style="color:#888888;"></input>
+					</view>
+				</view>
+				<view class="unBtnPass">
+					<button bindtap="unBtnPass">忘记密码？</button>
+				</view>
+				<view class="save">
+					<button class='save-btn' form-type="submit">登录</button>
+				</view>
+				<view class="register">
+					<button bindtap="registerBtn">快速注册</button>
+				</view>
+			</form>
+		</view>
+	</view>
+</view>

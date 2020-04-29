@@ -1,0 +1,40 @@
+.main {
+  float: left;
+  width: 92%;
+  margin: 0 30rpx;
+}
+
+.main .mainTop {
+  float: left;
+  width: 100%;
+  height: 118rpx;
+  line-height: 118rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2rpx 15rpx 0px rgba(233, 237, 244, 1);
+  border-radius: 20rpx;
+}
+
+.main .mainTop view {
+  float: left;
+  width: 33%;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.main .mainInfo .list {
+  float: left;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.main .mainInfo .list text {
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}

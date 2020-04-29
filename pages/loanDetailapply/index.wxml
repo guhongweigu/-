@@ -1,0 +1,63 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="list">
+			<van-row gutter="20">
+				<van-col span="8">
+					<image src="{{finalpic}}"></image>
+				</van-col>
+				<van-col span="16">
+					<view class='title'>{{loanDetail.name}}</view>
+					<view class='title-left'>参考利率:<span class='title-left-red'> {{loanDetail.mongey_min_rate}}%-{{loanDetail.mongey_max_rate}}%</span></view>
+					<view class='title-left'>贷款额度:<span> {{loanDetail.claims_min_money}}-{{loanDetail.claims_max_money}}万</span></view>
+					<view class='title-left'>贷款期限:<span> {{loanDetail.claims_min_term}}-{{loanDetail.claims_max_term}}个月
+							担保方式: {{finalecode}}</span></view>
+				</van-col>
+			</van-row>
+			<van-row gutter="20">
+				<van-col span="8">
+					<van-rate value="{{rateValue}}" bind:change="onChange" size="{{ 16}}" color="#ee0a24" void-color="#eee" void-icon="star"></van-rate>
+				</van-col>
+				<van-col span="16">
+					<view>成功对接<span class='title-left-red'>{{finalnum}}</span>家企业</view>
+				</van-col>
+			</van-row>
+			<view class="title-content">企业名称：{{finalcomtitle}}</view>
+			<form bindsubmit="submitForm">
+
+				<view class='search'>
+					<view class="search-left">
+						融资金额：
+					</view>
+					<view class='searchItem'>
+						<input name="money" value="{{money}}" placeholder="请输入融资金额" />
+						<text style="font-size: 26rpx;color: #E9021D;">万元</text>
+					</view>
+				</view>
+				<view class="itemView" style="line-height: 70rpx;">
+					融资用途：<input class="input" value="{{ use }}" name="use" placeholder="请输入融资用途" />
+				</view>
+
+				<!-- <picker bindchange="bindPickerChange" range-key="{{'name'}}"  name="warehouseContent" range="{{objectArray}}">
+					<view class="picker">
+						担保方式: {{objectArray[index].name}} <text >{{text}}</text>
+					</view>
+				</picker> -->
+				<view class="itemView">
+					期望融资期限：<input class="input input1" name="claims_min_term" value="{{ claims_min_term }}" /><text decode="{{true}}">&nbsp;-&nbsp;</text>
+					<input class="input input1" name="claims_max_term" value="{{ fclaims_max_term }}" /> <text decode="{{true}}">&nbsp;个月</text>
+				</view>
+				<view class="itemView">
+					期望利率范围：<input class="input input1" name="mongey_min_rate" value="{{ mongey_min_rate }}" /><text decode="{{true}}">&nbsp;至&nbsp;</text>
+					<input class="input input1" name="mongey_max_rate" value="{{ mongey_max_rate }}" /> <text decode="{{true}}">&nbsp;%</text>
+				</view>
+				<view class="itemView itemView1 ">
+					备注信息： <textarea class="view_textarea" value="{{remarks}}" name="remarks" bindblur="bindTextAreaBlur" placeholder="200字以内" />
+					</view>
+					<button class="form-button" form-type='submit' data-id="{{loanDetail.id}}">提交</button>
+			</form>
+		</view>
+	
+	</view>
+
+</view>

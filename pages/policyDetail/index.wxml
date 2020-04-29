@@ -1,0 +1,16 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<text class="title">{{policyDetail.title}}</text>
+		<text class="jiguan">发文机关：{{policyDetail.issuing_organ}}</text>
+		<text class="zihao">发文字号：{{policyDetail.issued_number}}</text>
+		<p class="zhuti">
+			<span>主题词：{{policyDetail.subject_headings}}</span>
+			<span>政策等级：{{policyDetail.subject_classification}}</span>
+			<span>{{policyDetail.publish_time}}</span>
+		</p>
+		<image src="{{policyDetail.image}}" class="image"></image>
+		<!--<text class="content">{{policyDetail.description}}</text>-->
+		<rich-text class="content" nodes="{{policyDetail.description}}"></rich-text>
+	</view>
+</view>

@@ -1,0 +1,37 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view>
+			<text>企业名称</text>
+			<text>{{compname}}</text>
+		</view>
+		<view>
+			<text>统一社会信用代码</text>
+			<text>{{compcode}}</text>
+		</view>
+		<view>
+			<text>融资金额（万元人民币）</text>
+			<text>{{clamneedDetail.money}}</text>
+		</view>
+		<view>
+			<text>融资利率</text>
+			<text>{{clamneedDetail.mongey_min_rate}}%-{{clamneedDetail.mongey_max_rate}}%</text>
+		</view>
+    <view>
+			<text>融资期限</text>
+			<text>{{clamneedDetail.claims_min_term}}个月~{{clamneedDetail.claims_max_term}}个月</text>
+		</view>
+		<view>
+			<text>担保方式</text>
+			<text>{{ecodename}}</text>
+		</view>
+		<view>
+			<text>融资用途</text>
+			<text>{{clamneedDetail.use}}</text>
+		</view>
+		<view>
+			<text>指定金融产品</text>
+			<text>{{jgproidname}}</text>
+		</view>
+	</view>
+</view>

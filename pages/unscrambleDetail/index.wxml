@@ -1,0 +1,16 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<text class="title">{{unscrambleDetail.title}}</text>
+		<text class="jiguan">发文机关：{{unscrambleDetail.issuing_organ}}</text>
+		<text class="zihao">发文字号：{{unscrambleDetail.issued_number}}</text>
+		<p class="zhuti">
+		<span>主题词：{{unscrambleDetail.subject_headings}}</span>
+		<span>政策等级：{{unscrambleDetail.subject_classification}}</span>
+		<span>{{unscrambleDetail.current_state_time}}</span>
+		</p>
+		<image src="{{unscrambleDetail.image}}" class="image"></image>
+		<!--<text class="content">{{unscrambleDetail.content}}</text>-->
+		<rich-text class="content" nodes="{{unscrambleDetail.description}}"></rich-text>
+	</view>
+</view>

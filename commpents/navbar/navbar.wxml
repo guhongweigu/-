@@ -1,0 +1,15 @@
+<view class='nav-wrap' style='height: {{height*2 + 80}}rpx;'>
+	<view class='nav-title' style='line-height: {{height*2 + 44}}px;'>{{navbarData.title}}</view>
+	<view style='display: flex; justify-content: space-around;flex-direction: column'>
+		<view class='nav-capsule' style='height: {{height*2 + 44}}px;' wx:if='{{navbarData.showCapsule}}'>
+			<view bindtap='_navbackMess' wx:if='{{!share}}'>
+				<image src='/pages/images/notice.png' style="width:44rpx;height:44rpx;margin-top:10rpx;"></image>
+			</view>
+		</view>
+		<view class='nav-capsule' style='height: {{height*2 + 44}}px;' wx:if='{{navbarData.showBack}}'>
+			<view bindtap='_navback' wx:if='{{!share}}'>
+				<van-icon name="arrow-left" />
+			</view>
+		</view>
+	</view>
+</view>

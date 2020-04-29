@@ -1,0 +1,50 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="topBtn">
+			<text class="title">需求状态查询</text>
+			<view class="topCLick">
+				<div catchtap="myFinanceBtn">
+					<image src="/pages/images/icon01.png"></image>
+					<button>我的融资</button>
+				</div>
+				<div catchtap="myloanprojuct">
+					<image src="/pages/images/icon02.png"></image>
+					<button>贷款产品</button>
+				</div>
+			</view>
+		</view>
+		<view class="functBtn">
+			<button bindtap="onattestation">我的企业<span>></span></button>
+			<button bindtap="onUpdatePass">密码修改<span>></span></button>
+			<button bindtap="onGoout">退出登录<span>></span></button>
+		</view>
+	</view>
+	<view class="down">
+		<van-tabbar active="{{ active }}" bind:change="onChange" class="tabber">
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.normal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.active }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				首页
+			</van-tabbar-item>
+		<van-tabbar-item>
+				<image slot="icon" src="{{ icon.bankNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.bankActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				我要融资
+			</van-tabbar-item>
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.marketNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.marketActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				金融数字超市
+			</van-tabbar-item>
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.policyNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.policyActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				政策解读</van-tabbar-item>
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.myNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.myActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				我的</van-tabbar-item>
+		</van-tabbar>
+	</view>
+</view>

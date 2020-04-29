@@ -1,0 +1,35 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="list">
+			<van-row gutter="20">
+				<van-col span="8">
+					<image src="{{img}}"></image>
+				</van-col>
+				<van-col span="16">
+					<view class='title'>{{loanDetail.name}}</view>
+					<view class='title-left'>参考利率：<span class='title-left-red'>
+							{{loanDetail.mongey_min_rate}}%-{{loanDetail.mongey_max_rate}}%</span></view>
+					<view class='title-left'>贷款额度：<span>
+							{{loanDetail.claims_min_money}}-{{loanDetail.claims_max_money}}万</span></view>
+					<view class='title-left'>贷款期限:<span>
+							{{loanDetail.claims_min_term}}-{{loanDetail.claims_max_term}}个月 担保方式:{{ecode}}</span></view>
+				</van-col>
+			</van-row>
+			<van-row gutter="20">
+				<van-col span="8">
+					<van-rate value="{{star}}" bind:change="onChange" size="{{ 16}}" color="#ee0a24" void-color="#eee" void-icon="star"></van-rate>
+				</van-col>
+				<van-col span="16">
+					<view>成功对接<span class='title-left-red'>{{num}}</span>家企业</view>
+				</van-col>
+			</van-row>
+			<video id="myvideo" style="height:300rpx;width:100%;  margin-top: 39rpx;" src="{{video}}"  autoplay> </video>
+			<view class="title-name">项目详情</view>
+			<view class="title-content">{{loanDetail.news[0].news_name}}:</view>
+			<view class="title-content">{{loanDetail.news[0].news_info}}</view>
+		</view>
+		<van-button class='button' type="danger" round size="large" catchtap='clickApply' data-id="{{loanDetail._id}}" data-num="{{num}}" data-uid="{{loanDetail.uid}}" data-ecode="{{ecode}}" data-img="{{img}}">申请</van-button>
+	</view>
+
+</view>

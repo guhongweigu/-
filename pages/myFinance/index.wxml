@@ -1,0 +1,20 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="mainTop">
+			<view>银行名称</view>
+			<view>金额(万元人民币)
+			</view>
+			<view>状态</view>
+		</view>
+		<view class="mainInfo">
+			<view class="list" wx:key="unique" wx:for="{{list}}" wx:for-item="item">
+				<view bindtap="bindtap" id="{{list._id}}">
+					<text>{{item.bankName}}</text>
+					<text>{{item.yuan}}</text>
+					<text>{{item.status}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,16 @@
+<wxs module="sub" src="../messageInfo/sub.wxs"></wxs>
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="list" wx:key="unique" wx:for="{{messageList}}" wx:for-item="item">
+			<view bindtap="bindtap" id="{{list._id}}">
+				<text class="title">{{item.title}}</text>
+				<text class="news">{{item.news}}</text>
+				<view class="info">
+					<text>({{item.status=='0'?'未读':'已读'}})</text>
+					<text>{{sub.getstr(item.meta.createdAt)}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>                                         

@@ -1,0 +1,23 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="form">
+			<form bindsubmit="formSubmit" bindreset="formReset">
+				<view class='input-content'>
+					<view class='input-col' style='border-bottom:none'>
+						<input type='text' password name="password_old" placeholder='请输入您的密码' placeholder-style="color:#888888;"></input>
+					</view>
+          		<view class='input-col' style='border-bottom:none'>
+						<input type='text' password name="password_new" placeholder='请输入新密码' placeholder-style="color:#888888;"></input>
+					</view>
+          		<view class='input-col' style='border-bottom:none'>
+						<input type='text' password name="password_again" placeholder='请再次输入密码' placeholder-style="color:#888888;"></input>
+					</view>
+				</view>
+				<view class="save">
+					<button class='save-btn' form-type="submit">修改密码</button>
+				</view>
+			</form>
+		</view>
+	</view>
+</view>

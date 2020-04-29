@@ -1,0 +1,54 @@
+.main {
+  float: left;
+  width: 92%;
+  margin: 0 30rpx;
+}
+
+.main .topTable {
+  position: fixed;
+  top: 66px;
+  float: left;
+  width: 92%;
+  height: 118rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2rpx 15rpx 0px rgba(233, 237, 244, 1);
+  border-radius: 20rpx;
+  z-index: 999;
+}
+
+.main .topTable view {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: 20rpx 0 0 0;
+}
+
+.main .topTable view p {
+  float: left;
+  width: 100%;
+}
+
+.main .mainList {
+  float: left;
+  width: 100%;
+  position: relative;
+  top: 118rpx;
+}
+
+.main .list {
+  float: left;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.main .list text {
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}

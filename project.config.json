@@ -4,18 +4,29 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.1",
-	"appid": "wx0fd4b616bc7cf3bb",
-	"projectname": "styleApp",
+	"libVersion": "2.10.4",
+	"appid": "wx9cfeb2da87a27fba",
+	"projectname": "web-finance",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

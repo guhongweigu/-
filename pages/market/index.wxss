@@ -1,0 +1,439 @@
+.main {
+  float: left;
+  width: 92%;
+  margin: 0 30rpx;
+}
+
+.main .searchInfo {
+  float: left;
+  width: 100%;
+  height: 88rpx;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 20rpx;
+  margin: 5rpx 0 0 0;
+}
+
+.main .searchInfo input {
+  float: left;
+  width: 80%;
+  height: 50rpx;
+  margin: 20rpx;
+}
+
+.main .searchInfo button {
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  background: transparent;
+  color: red;
+  margin: 20rpx;
+  padding: 0;
+  line-height: 60rpx;
+}
+
+.main .marketList {
+  float: left;
+  width: 100%;
+}
+
+.main .marketList .van-tab--active {
+  color: red !important;
+}
+
+.main .marketList .van-hairline--top-bottom:after {
+  border-width: 0 !important;
+}
+
+.marketOne {
+  float: left;
+  width: 100%;
+  margin: 10rpx 0 0 0;
+}
+
+.marketOne .top {
+  float: left;
+  width: 95%;
+  height: 68rpx;
+  background: rgba(242, 245, 250, 1);
+  padding: 0 20rpx;
+
+}
+
+.marketOne .top .left {
+  float: left;
+  width: 50%;
+  height: 68rpx;
+  line-height: 68rpx;
+}
+
+.sign-setting-border {
+  float: left;
+  margin: 0 30rpx 0 0;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+}
+
+.selected {
+  color: rgba(233, 2, 29, 1);
+}
+
+.marketOne .top .right {
+  float: right;
+  width: 50%;
+  height: 68rpx;
+}
+
+.marketOne .top .right .one {
+  float: left;
+  border-right: 1px solid #ccc;
+  margin: 22rpx 0;
+  margin: 22rpx 0 22rpx 170rpx;
+}
+
+.marketOne .top .right .one image {
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 30rpx 0 0rpx;
+}
+
+.marketOne .top .right .two {
+  float: right;
+  margin: 22rpx 0;
+}
+
+.marketOne .top .right .two image {
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.marketOne .top .right .two text {
+  float: left;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+  margin: -4rpx 0 0 0;
+}
+
+.marketOne .mess {
+  float: left;
+  width: 100%;
+  margin: 30rpx 0 0 0;
+}
+
+/* 点击上下效果 */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* 全部-视频列表 */
+.marketOneVideo {
+  float: left;
+  width: 100%;
+}
+
+.marketOneVideo .list {
+  float: left;
+  width: 100%;
+  height: 490rpx;
+  margin-bottom: 40rpx;
+}
+
+.marketOneVideo .list video {
+  float: left;
+  width: 100%;
+  height: 300rpx;
+  margin: 0 0 20rpx 0;
+}
+
+.marketOneVideo .list view:nth-child(2) {
+  float: left;
+  width: 70%;
+  height: 68rpx;
+  line-height: 68rpx;
+  margin: 0 0 20rpx 0;
+}
+
+.marketOneVideo .list view:nth-child(2) text {
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 20rpx 0 0;
+}
+
+.marketOneVideo .list view:nth-child(3) {
+  float: right;
+  width: 30%;
+  height: 68rpx;
+  margin: 0 0 20rpx 0;
+}
+
+.marketOneVideo .list view:nth-child(3) text {
+  float: left;
+  width: 200rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  background: rgba(233, 2, 29, 1);
+  border-radius: 34px;
+  text-align: center;
+  color: #fff;
+}
+
+.marketOneVideo .list view:nth-child(4) {
+  float: left;
+  width: 100%;
+  margin: 0 0 10rpx 0;
+}
+
+.marketOneVideo .list view:nth-child(4) view {
+  float: left;
+  width: 50%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}
+
+.marketOneVideo .list view:nth-child(4) view text {
+  color: #E9021D;
+}
+
+.marketOneVideo .list view:nth-child(4) .monery {
+  float: left;
+  width: 50%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}
+
+.marketOneVideo .list view:nth-child(5) {
+  float: left;
+  width: 100%;
+}
+
+.marketOneVideo .list view:nth-child(5) text {
+  float: left;
+  width: 50%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}
+
+/* 全部-无视频列表 */
+.marketOneNovideo {
+  float: left;
+  width: 100%;
+}
+
+.marketOneNovideo .list {
+  float: left;
+  width: 100%;
+  height: 236rpx;
+  margin-bottom: 40rpx;
+}
+
+.marketOneNovideo .list .left {
+  float: left;
+  width: 200rpx;
+  height: 236rpx;
+  position: relative;
+  margin: 0 30rpx 0 0;
+}
+
+.marketOneNovideo .list .left view:first-child {
+  float: left;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.marketOneNovideo .list .left view:first-child .pic {
+  float: left;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+  position: absolute;
+}
+
+.marketOneNovideo .list .left view:first-child view {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: 0px;
+  height: 0px;
+  border: 50rpx solid transparent;
+  border-top-color: #E9021D;
+  border-left-color: #E9021D;
+  border-radius: 8rpx;
+}
+
+.marketOneNovideo .list .left view:first-child view text {
+  position: absolute;
+  top: -40rpx;
+  left: -40rpx;
+  font-size: 20rpx;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+
+.marketOneNovideo .list .left view:last-child {
+  float: left;
+  width: 100%;
+  height: 36rpx;
+  padding: 5rpx 0 0 0;
+}
+
+.marketOneNovideo .list .left view:last-child image {
+  float: left;
+  margin: 0 17rpx 0 0;
+}
+
+.marketOneNovideo .list .left view:last-child image:last-child {
+  margin: 0;
+}
+
+.marketOneNovideo .list .right {
+  float: left;
+  width: 66%;
+  height: 236rpx;
+}
+
+.marketOneNovideo .list .right view:first-child {
+  float: left;
+  width: 100%;
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 0 18rpx 0;
+}
+
+.marketOneNovideo .list .right view:nth-child(2) {
+  float: left;
+  width: 100%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 0 15rpx 0;
+}
+
+.marketOneNovideo .list .right view:nth-child(2) text {
+  color: #E9021D;
+}
+
+.marketOneNovideo .list .right view:nth-child(3) {
+  float: left;
+  width: 100%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 0 15rpx 0;
+}
+
+.marketOneNovideo .list .right view:nth-child(4) {
+  float: left;
+  width: 100%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 0 15rpx 0;
+}
+
+.marketOneNovideo .list .right view:nth-child(4) text {
+  float: left;
+  width: 50%;
+}
+
+.marketOneNovideo .list .right view:nth-child(5) {
+  float: left;
+  width: 100%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}
+
+.marketOneNovideo .list .right view:nth-child(5) text {
+  color: #E9021D;
+}
+
+/* 彈框 */
+.vanPopup .van-popup {
+  width: 600rpx !important;
+}
+
+.vanPopup .popupInfo {
+  float: left;
+  width: 92%;
+  margin: 120rpx 30rpx 0 30rpx;
+}
+
+.popupInfo .btn-area {
+  float: left;
+  width: 100%;
+  padding: 0 90rpx;
+}
+
+.popupInfo .btn-area button {
+  float: left;
+  width: 200rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  background: rgba(233, 2, 29, 1);
+  border-radius: 10px;
+  padding: 0;
+  color: #fff;
+}
+
+.popupInfo .btn-area button:first-child {
+  margin: 0 30rpx 0 0;
+}
+
+.popupInfo .one {
+  float: left;
+  width: 100%;
+}
+
+.popupInfo .one label {
+  margin: 0 0 20rpx 0;
+  float: left;
+  width: 100%;
+
+}
+
+.popupInfo .one .radio {
+  float: left;
+  width: 230rpx;
+  height: 68rpx;
+  background: rgba(242, 245, 250, 1);
+  border-radius: 10px;
+  margin: 0 50rpx 20rpx 0;
+  line-height: 68rpx;
+  padding: 0 10rpx;
+}
+
+.popupInfo .one .radio:nth-child(2n) {
+  margin: 0 0 20rpx 0;
+}
+
+.popupInfo .one .radio text {
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}

@@ -1,0 +1,31 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<text class="title">
+		  <text>请注册账号</text>
+		</text>
+		<view class="form">
+			<form bindsubmit="formSubmit" bindreset="formReset">
+				<view class='input-content'>
+					<view class='input-col' style='border-bottom:none'>
+						<input type='text' name="companyname" placeholder='请输入企业名称' placeholder-style="color:#888888;"></input>
+					</view>
+					<view class='input-col'>
+						<input type='number' name="phone" placeholder='请输入您本人的手机号码' maxlength="11" placeholder-style="color:#888888;" ></input>
+					</view>
+					<!-- <view class='input-col'>
+						<input type='number' name="yanzhengma" placeholder='请输入验证码' placeholder-style="color:#888888;"></input>
+						<view class="codeBtn"> 
+						</view>
+					</view> -->
+					<view class='input-col' style='border-bottom:none'>
+						<input type='text' password name="password" placeholder='请输入密码' placeholder-style="color:#888888;"></input>
+					</view>
+				</view>
+				<view class="save">
+					<button class='save-btn' form-type="submit">注册</button>
+				</view>
+			</form>
+		</view>
+	</view>
+</view>

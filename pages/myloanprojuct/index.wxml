@@ -1,0 +1,25 @@
+<wxs module="sub" src="../messageInfo/sub.wxs"></wxs>
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="topTable">
+			<view>融资金额<p>(万元)</p>
+			</view>
+			<view>融资期限<p>(个月)</p>
+			</view>
+			<view>利率范围</view>
+			<view>发布日期</view>
+		</view>
+		<view class="mainList">
+			<view class="list" wx:key="index" wx:for="{{messageList}}" wx:for-item="item">
+				<view catchtap="tompDetail" data-cneedid="{{item.id}}" id="{{messageList._id}}">
+					<text>{{item.money}}</text>
+					<text>{{item.claims_min_term}}~{{item.claims_max_term}}个月</text>
+					<text>{{item.mongey_min_rate}}%~{{item.mongey_max_rate}}%</text>
+					<text>{{sub.getstr(item.meta.createdAt)}}</text>
+				</view>
+			</view>
+		</view>
+
+	</view>
+</view>

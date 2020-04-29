@@ -1,0 +1,90 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="form">
+			<form bindsubmit="formSubmit" bindreset="formReset">
+				<view class='input-content' >
+					<view class="input-col">
+						<label>统一社会信用代码</label>
+						<input class="one" type='text' name="code" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.code}}"></input>
+					</view>
+					<view class="input-col">
+						<label>法人代表</label>
+						<input class="two" type='text' name="representative" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.representative}}"></input>
+					</view>
+					<view class="input-col">
+						<label>法人证件号</label>
+						<input class="thirth" type='text' name="representative_id" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.representative_id}}"></input>
+					</view>
+					<view class="input-col">
+						<label>法人手机号</label>
+						<input class="thirth" type='text' name="representative_phone" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.representative_phone}}"></input>
+					</view>
+					<view class="input-col">
+						<label>成立日期</label>
+						<input class="three" type='text' name="establish_date" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.establish_date}}"></input>
+					</view>
+					<view class="input-col">
+						<label>营业到期日期</label>
+						<input class="four" type='text' name="due_date" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.due_date}}"></input>
+					</view>
+					<view class="input-col">
+						<label>企业类型</label>
+						<input class="five" type='text' name="type" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.type}}"></input>
+					</view>
+					<view class="input-col">
+						<label>企业名称</label>
+						<input class="six" type='text' name="company_name" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.company_name}}"></input>
+					</view>
+					<view class="input-col">
+						<label>注册资本</label>
+						<input class="seven" type='text' name="registered_capital" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.registered_capital}}"></input>
+					</view>
+					<view class="input-col">
+						<label>资产总额</label>
+						<input class="eight" type='text' name="total_assets" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.total_assets}}"></input>
+					</view>
+					<view class="input-col">
+						<label>营业收入</label>
+						<input class="nine" type='text' name="taking" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.taking}}"></input>
+					</view>
+					<view class="input-col">
+						<label>从业人员数量</label>
+						<input class="ten" type='text' name="number" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.number}}"></input>
+					</view>
+					<view class="input-col">
+						<label>企业所属类型</label>
+						<input class="eleven" type='text' name="belong_type" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.belong_type}}"></input>
+					</view>
+					<!-- <view class="input-col">
+						<label>公司行业</label>
+						<input class="twelve" type='text' name="profession_four" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.profession_four}}"></input>
+					</view>
+					<view class="input-col">
+						<label>企业所属地</label>
+						<input class="thirth" type='text' name="belong_addr_city" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.belong_addr_city}}"></input>
+					</view> -->
+					<view class="input-col">
+						<label>经营地址</label>
+						<input class="fourth" type='text' name="business_addr" placeholder='请输入' placeholder-style="color:#888888;" value="{{user.business_addr}}"></input>
+					</view>
+					<view class="input-col">
+						<label class="textarea">注册地址</label>
+						<textarea bindblur="bindTextAreaBlur" class="sixth" name="registered_addr" maxlength="500" placeholder="500字以内" placeholder-style="color:#888888;" value="{{user.registered_addr}}" />
+						</view>
+					<view class="input-col">
+						<label class="textarea">经营范围</label>
+						<textarea bindblur="bindTextAreaBlur" class="sixth" name="business_scope"  maxlength="500" placeholder="500字以内" placeholder-style="color:#888888;" value="{{user.business_scope}}"/>
+					</view>
+					<view class="input-col">
+						<label class="textarea">企业简介</label>
+						<textarea required bindblur="bindTextAreaBlur" class="sixth" name="introduction" maxlength="500" placeholder="500字以内" placeholder-style="color:#888888;" value="{{user.introduction}}"/>
+						</view>
+				</view>
+				<view class="save" wx:if='{{!user.code}}'>
+					<button class='save-btn' form-type="submit">认证</button>
+				</view>
+			</form>
+		</view>
+	</view>
+</view>

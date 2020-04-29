@@ -1,0 +1,57 @@
+.main {
+  float: left;
+  width: 92%;
+  margin: 0 30rpx;
+}
+
+.main view {
+  float: left;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.main view text:first-child {
+  float: left;
+  width: 50%;
+  text-align: left;
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+}
+
+.main view text:last-child {
+  float: right;
+  width: 50%;
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  text-align: right;
+}
+
+.main view:last-child {
+  border-bottom: none;
+}
+
+.main view:last-child text:first-child {
+  float: left;
+  width: 100%;
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: rgba(40, 40, 40, 1);
+}
+
+.main view:last-child text:last-child {
+  float: left;
+  width: 100%;
+  text-align: left;
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  line-height: 50rpx;
+}

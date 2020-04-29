@@ -1,0 +1,8 @@
+{
+  "onReachBottomDistance":80,
+  "enablePullDownRefresh": true,
+  "component": true,
+  "usingComponents": {
+    "nav-bar": "/commpents/navbar/navbar"
+  }
+}

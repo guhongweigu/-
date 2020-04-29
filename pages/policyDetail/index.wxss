@@ -1,0 +1,73 @@
+/* pages/policyDetail/index.wxss */
+.main {
+  float: left;
+  width: 93%;
+  height: 100%;
+  margin: 0 30rpx;
+}
+
+.main .title {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 0 25rpx 0;
+}
+
+.main .jiguan {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+  margin: 0 0 10rpx 0;
+}
+
+.main .zihao {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+  margin: 0 0 10rpx 0;
+}
+
+.main .zhuti {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(136, 136, 136, 1);
+  margin: 0 0 30rpx 0;
+}
+
+.main .zhuti span {
+  margin: 0 10rpx 0 0;
+}
+
+.main .image {
+  float: left;
+  width: 100%;
+  height: 298rpx;
+  text-align: center;
+  margin: 0 0 30rpx 0;
+}
+
+.main .content {
+  float: left;
+  width: 100%;
+  font-size: 26rpx;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 0 30rpx 0;
+}

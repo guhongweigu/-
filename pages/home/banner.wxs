@@ -1,0 +1,5 @@
+var bannerimg = function (val) {
+return ('http://124.235.209.122:88'+val);
+}
+//exports: 通过该属性，对外共享本模块的私有变量与函数。
+module.exports.bannerimg = bannerimg;

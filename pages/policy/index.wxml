@@ -1,0 +1,74 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view class="swiper-tab">
+			<view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">政策解读</view>
+			<view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">政策发布</view>
+		</view>
+		<swiper current="{{currentTab}}" bindchange="swiperTab" style="height:{{sHeight}}">
+			<swiper-item>
+				<view class="policyLeft">
+					<view class="list" wx:key="unique" wx:for="{{policyList}}" wx:for-item="item" id="policy">
+						<view bindtap="policyListDetail" id="{{list._id}}" data-pid="{{item.id}}">
+							<image src="{{item.image}}"></image>
+							<view class="info">
+								<p>{{item.title}}</p>
+								<p>
+									<span>主题词：{{item.subject_headings}}</span>
+									<span>政策等级：{{item.subject_classification}}</span>
+								</p>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="loadmore loading" wx:if="{{ policyHasMore }}">正在加载...</view>
+				<view class="loadmore" wx:else>已经到底了</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="policyLeft policyRight">
+					<view class="list" wx:key="unique" wx:for="{{unscrambleList}}" wx:for-item="item" id="unscramble">
+						<view bindtap="unscrambleListDetail" id="{{list._id}}" data-unid="{{item.id}}">
+							<image src="{{item.image}}"></image>
+							<view class="info">
+								<p>{{item.title}}</p>
+								<p>
+									<span>主题词：{{item.subject_headings}}</span>
+									<span>政策等级：{{item.subject_classification}}</span>
+								</p>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="loadmore loading" wx:if="{{ unscrambleHasMore }}">正在加载...</view>
+				<view class="loadmore" wx:else>已经到底了</view>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="down">
+		<van-tabbar active="{{ active }}" bind:change="onChange" class="tabber">
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.normal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.active }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				首页
+			</van-tabbar-item>
+		<van-tabbar-item>
+				<image slot="icon" src="{{ icon.bankNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.bankActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				我要融资
+			</van-tabbar-item>
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.marketNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.marketActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				金融数字超市
+			</van-tabbar-item>
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.policyNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.policyActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				政策解读</van-tabbar-item>
+			<van-tabbar-item>
+				<image slot="icon" src="{{ icon.myNormal }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				<image slot="icon-active" src="{{ icon.myActive }}" mode="aspectFit" style="width: 30px; height: 18px;" />
+				我的</van-tabbar-item>
+		</van-tabbar>
+	</view>
+</view>

@@ -1,0 +1,46 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home">
+	<view class="main">
+		<view>
+			<text>企业名称</text>
+			<text>{{financeInfo.company_name}}</text>
+		</view>
+		<view>
+			<text>统一社会信用代码</text>
+			<text>{{financeInfo.tyshxydm}}</text>
+		</view>
+		<view>
+			<text>所属区域</text>
+			<text>{{financeInfo.ssqy}}</text>
+		</view>
+				<view>
+			<text>开户行</text>
+			<text>{{financeInfo.khh}}</text>
+		</view>
+		<view>
+			<text>融资金额（万元人民币）</text>
+			<text>{{financeInfo.rzje}}</text>
+		</view>
+		<view>
+			<text>期望融资期限</text>
+			<text>{{financeInfo.minMonth}}-{{financeInfo.maxMonth}}月</text>
+		</view>
+		<view>
+			<text>担保方式</text>
+			<text>{{financeInfo.dbfs}}</text>
+		</view>
+		<view>
+			<text>希望获得融资支持</text>
+			<text>{{financeInfo.rzzc}}</text>
+		</view>
+		<view>
+			<text>预计何时有融资需求</text>
+			<text>{{financeInfo.rzxq}}</text>
+		</view>
+		<view>
+			<text>金融机构留言</text>
+			<text>{{financeInfo.liuyan}}</text>
+		</view>
+
+	</view>
+</view>
